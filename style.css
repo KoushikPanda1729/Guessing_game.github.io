@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark: #350363;
+    --background: #ffe9db;
+}
+
+html {
+    font-size: 62%;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: cadetblue;
+}
+
+main {
+    box-shadow: 0px 10px 5px 10px rgb(88, 82, 82);
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    width: 40vw;
+    text-align: center;
+    background-color: var(--background);
+    border: solid var(--dark);
+    border-width: .1rem;
+    border-radius: 1rem;
+    padding: 8rem 5rem;
+    columns: #1f2933;
+}
+
+h2 {
+    font-size: 2.0rem;
+    margin: 2rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+.image {
+    width: 90%;
+    max-height: 22rem;
+    height: auto;
+    margin: 1rem 0 4rem 0;
+}
+
+
+.button-warpper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+button {
+    min-width: 100%;
+    background-image: linear-gradient(92.88deg,
+            #455eb5 9.16%,
+            #5643cc 43.89%,
+            #673fd7 64.72%);
+    border-radius: 0.5rem;
+    border-style: none;
+    color: #ffff;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 2.5rem 6rem;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    user-select: none;
+    -webkit-user-select: none;
+    text-transform: capitalize;
+    transition: 1s;
+}
+
+button:hover {
+    box-shadow: 20px 8px 30px gray;
+    transition: 0.8s;
+}
+
+button:last-child {
+    background: var(--dark);
+    margin-bottom: 0;
+}
+
+
+/* Our Game area */
+
+#gameArea {
+    display: flex;
+    margin-top: 8rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#newGameButton button {
+    min-width: 100%;
+    margin: 2rem 0;
+}
+
+input {
+    border: 0.2rem solid lightgray;
+    background: transparent;
+    margin: 4rem 0;
+    padding: 2rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+.stats {
+    text-align: left;
+    margin: 4rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+
+}
+
+.info span {
+    margin-top: 1.8rem;
+    margin-left: 4rem;
+    font-size: 2rem;
+    color: #ff0511;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+@media (max-width:500px) {
+
+    main {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+}
+
+@media (min-width:501px) and (max-width:1100px) {
+
+    main {
+
+
+        width: 60vw;
+        height: auto;
+    }
+}
